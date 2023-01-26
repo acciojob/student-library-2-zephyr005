@@ -20,7 +20,7 @@ public class BookController {
     //Write createBook API with required annotations
     @PostMapping("/create")
     public ResponseEntity<String> createBook(@RequestBody Book book){
-        bookService.create(book);
+        bookService.createBook(book);
         return new ResponseEntity<>("Book has been added successfully", HttpStatus.CREATED);
     }
 
