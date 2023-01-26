@@ -45,8 +45,9 @@ public class TransactionService {
         //If the transaction is successful, save the transaction to the list of transactions and return the id
 
         //Note that the error message should match exactly in all cases
-        Card card = cardRepository5.findById(cardId).get();
         Book book = bookRepository5.findById(bookId).get();
+        Card card = cardRepository5.findById(cardId).get();
+
 
         Transaction transaction = new Transaction();
 
